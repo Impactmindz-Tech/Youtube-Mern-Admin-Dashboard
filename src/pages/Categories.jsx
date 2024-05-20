@@ -21,7 +21,7 @@ const Categories = () => {
     e.preventDefault();
     try {
       let senddata = await axios.post(
-        "http://localhost:3000/category/AddCategory",
+        "https://mern-backend-eosin.vercel.app/category/AddCategory",
         data
       );
       if (senddata.status === 200) {
@@ -48,7 +48,7 @@ const Categories = () => {
   const handledelete = async (id) => {
     try {
       let deletedata = await axios.put(
-        `https://youtube-mern-admin-backend.vercel.app/delete/${id}/status/0`
+        `https://mern-backend-eosin.vercel.app/delete/${id}/status/0`
       );
    
       if (deletedata.status === 200) {
@@ -75,7 +75,7 @@ const Categories = () => {
     e.preventDefault();
     try {
       let updatedata = await axios.patch(
-        `https://youtube-mern-admin-backend.vercel.app/category/update/${id}`,
+        `https://mern-backend-eosin.vercel.app/category/update/${id}`,
         update
       );
       console.log(id);

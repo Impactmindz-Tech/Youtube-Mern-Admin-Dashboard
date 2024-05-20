@@ -12,7 +12,7 @@ const ProductContextProvider=(props)=>{
 
 const getAllProduct = async()=>{
     try{
-        let response = await axios.get("https://youtube-mern-admin-backend.vercel.app/product/");
+        let response = await axios.get("https://mern-backend-eosin.vercel.app/product/");
         let result = response.data;
        setProduct(result);
      
@@ -29,7 +29,7 @@ const getAllProduct = async()=>{
 
 const getSortProduct = async(value)=>{
     try{
-        let response = await axios.get(`https://youtube-mern-admin-backend.vercel.app/sorting?sort=${value}`);
+        let response = await axios.get(`https://mern-backend-eosin.vercel.app/sorting?sort=${value}`);
         // setProduct(response.data);
     
     }
@@ -40,7 +40,7 @@ const getSortProduct = async(value)=>{
 const getAllcategory = async()=>{
     try{
 
-      let response = await axios.get("http://localhost:3000/category");
+      let response = await axios.get("https://mern-backend-eosin.vercel.app/category");
       setCate(response.data.categoryname.DroneVideos);
        console.log(response.data.categoryname.DroneVideos);
 

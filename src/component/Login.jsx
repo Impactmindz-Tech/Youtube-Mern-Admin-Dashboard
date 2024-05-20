@@ -22,7 +22,7 @@ setdata((prev)=>{
         e.preventDefault();
     
         try{
-            let datafetch =  await axios.post("http://localhost:3000/user/login",data);
+            let datafetch =  await axios.post("https://mern-backend-eosin.vercel.app/user/login",data);
            let response = datafetch.data;
            if(response.success){
             console.log(response.token);

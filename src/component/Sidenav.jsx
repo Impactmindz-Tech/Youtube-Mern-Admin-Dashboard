@@ -111,7 +111,7 @@ const handlelogout =()=>{
   try{
     if(user){
        localStorage.removeItem('user');
-       Navigate('https://youtube-mern-admin.vercel.app/');
+       Navigate('/');
     }
   }catch(error){
     console.log(error);
@@ -128,7 +128,7 @@ const changepassword = (e)=>{
 const updatepass = async(e)=>{
   e.preventDefault();
   try{
-       let updatepass = await axios.post(`https://youtube-mern-admin-backend.vercel.app/user/update/${userid}`,data);
+       let updatepass = await axios.post(`https://mern-backend-eosin.vercel.app/user/update/${userid}`,data);
        console.log(updatepass);
        console.log(userid);
   }catch(error){

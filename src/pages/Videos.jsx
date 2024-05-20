@@ -40,7 +40,7 @@ const Videos = () => {
     e.preventDefault();
     try {
       let senddata = await axios.post(
-        `https://youtube-mern-admin-backend.vercel.app/product/AddNewProduct/${id}`,
+        `https://mern-backend-eosin.vercel.app/product/AddNewProduct/${id}`,
         data
       );
       if (senddata.status === 200) {
@@ -70,7 +70,7 @@ const Videos = () => {
   const handledelete = async (id) => {
     try {
       let deletedata = await axios.put(
-        `https://youtube-mern-admin-backend.vercel.app/product/softdelete/${id}/status/${stats}`
+        `https://mern-backend-eosin.vercel.app/product/softdelete/${id}/status/${stats}`
       );
       if (deletedata.status === 200) {
         alert("successfully delete");
@@ -111,7 +111,7 @@ const Videos = () => {
 
     try {
       let updatedata = await axios.patch(
-        `https://youtube-mern-admin-backend.vercel.app/product/Update/${proid}`,
+        `https://mern-backend-eosin.vercel.app/product/Update/${proid}`,
         update
       );
       console.log(proid);
