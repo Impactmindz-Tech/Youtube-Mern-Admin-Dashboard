@@ -213,7 +213,7 @@ const updatepass = async(e)=>{
                 <ListItemText primary="Category" sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
             </ListItem>
-        <ListItem  disablePadding sx={{ display: 'block' }} onClick={()=>Navigate('/video')}>
+        <ListItem  disablePadding sx={{ display: 'block' }} onClick={()=>Navigate('/videos')}>
               <ListItemButton
                 sx={{
                   minHeight: 48,
