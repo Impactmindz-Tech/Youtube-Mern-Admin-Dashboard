@@ -1,0 +1,100 @@
+.login_box{
+    background-color: aliceblue;
+    margin-top: 180px;
+padding: 30px 40px;
+}
+.Product_table{
+    width: 100%;
+    text-align: center;
+
+}
+td, th {
+    border: 1px solid #dddddd;
+  
+  padding: 5px;
+  }
+
+  .editdeletebtn button{
+    border: none;
+;
+    
+  }
+  .editdeletebtn .update{
+    background-color: #5AB2FF;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 10px;
+  }
+  .editdeletebtn .delete{
+    background-color: red;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 10px;
+
+
+  }
+  .custom_card{
+    padding: 20px;
+  }
+  .logout{
+    border: none;
+    background: white;
+    border-radius: 10px;
+    padding: 5px 20px;
+    transition: 0.5s all;
+  }
+  .logout:hover{
+    background: #5AB2FF;
+    color: white;
+  }
+
+  .profile{
+    cursor: pointer;
+  }
+  .profile_card{
+    position: absolute;
+    width: 30%;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    background: aliceblue;
+
+  }
+.username{
+  background: #dddddd;
+  padding: 7px;
+  border-radius: 5px;
+}
+.view_buttons{
+  border: none;
+  background: #1976d2;
+  color: white;
+  border-radius: 15px;
+  padding: 10px 40px;
+}
+.category_table{
+  width: 100%;
+  text-align: center;
+}
+.category_card {
+transition: 0.5s all;
+
+}
+.profile_card{
+  padding: 30px 40px;
+}
+.submit_button{
+  text-align: center;
+  margin-top: 10px;
+
+}
+.update_button{
+  border: none;
+  background-color: #1976d2;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
